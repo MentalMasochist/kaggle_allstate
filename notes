@@ -1,0 +1,81 @@
+TODO:
+[] see what the CV error is for the "last quote" method
+	[] use this to ascertain what the est number of folds is for this data
+	[] start with 2, 5, 10 fold CV
+	- because of the size of this, will only be able to do one cv type later
+[] Naive Bayes type-a
+	[] Fist get CV error
+	[] apply to test data and submit
+[] Naive Bayes type-b
+	[] need to create a trainnig set for this
+		[] shopping policies are now features (and costs), but you will need to include purchased policies into the mix too
+[] k-NN
+	[] play with distances
+		[] uniform
+		[] distance-based
+		[] Mahalanobis via Cholesky transform
+[] what would be the third option????
+
+
+Modeling Techniques
+===================
+
+1. Last Policy
+	- CV Error: 
+		- 2-fold: 
+		- 5-fold: 
+		- 10-fold: 
+	- Test Error: 0.53793
+2. Naive Bayes 
+	a. using record-type=1 only
+		- features to include (only include features that make sense)
+			- state
+			- location
+			- group_size 
+			- homeowner
+			- car_age
+			- car_value
+			- risk_factor
+			- age_oldest
+			- age_youngest
+			- maried couple
+			- C_previous
+			- duration_previous
+		- predict on policy suboptions independently
+		- CV Error: 
+		- Test Error:
+
+	b. train on last shopping point
+		- features to include
+			- state
+			- location
+			- group_size 
+			- homeowner
+			- car_age
+			- car_value
+			- risk_factor
+			- age_oldest
+			- age_youngest
+			- maried couple
+			- C_previous
+			- duration_previous
+			- sub-options of last shopping 
+
+	b.
+	c.
+
+
+
+Feature Ideas
+=============
+
+
+Submissions
+===========
+1. submitted most recent plan for submission testing
+
+
+Ideas
+=====
+- for features
+	- use an age range instead of youngest and oldest
